@@ -13,7 +13,7 @@ $options = array(
 
 try {
     $soapClient = new SoapClient($wsdl, $options);
-    var_dump($soapClient->registraTitulo());
+    var_dump($soapClient->create());
 } catch (Exception $e) {
     var_dump($e);
 }
